@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "@/assets/styles/globals.css";
+import "./globals.css";
 
 export const metadata = {
   title: "Property Pulse",
