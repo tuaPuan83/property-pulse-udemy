@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import "@/assets/styles/globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,7 +9,9 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
